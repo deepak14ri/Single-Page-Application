@@ -1,0 +1,287 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .logo {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: brown;
+}
+
+nav.desktop-nav {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav.desktop-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav.desktop-nav ul li {
+  margin: 0 10px;
+}
+
+nav.desktop-nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav.mobile-nav {
+  background-color: #fff;
+  padding: 10px;
+}
+
+nav.mobile-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.mobile-nav ul li {
+  margin: 0 10px;
+}
+
+nav.mobile-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  }
+
+  nav.desktop-nav {
+    display: none;
+  }
+
+  nav.mobile-nav {
+    display: block;
+  }
+
+  .sidenav {
+    width: 250px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 16px;
+  }
+}
+
+@media (min-width: 961px) {
+  nav.mobile-nav {
+    display: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  object-fit: contain;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.grid-item {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.item-title {
+  color: brown;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding: 20px 0;
+  }
+}
+
+.lrcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.lr-left {
+  width: 70%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.lr-right {
+  width: 30%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .lrcontainer {
+    flex-direction: column;
+  }
+
+  .lr-left,
+  .lr-right {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.rlcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  padding-bottom: 20px;
+}
+
+.rl-left {
+  width: 20%;
+  background-color: #fff;
+  padding: 10px 10px 10px 0;
+}
+
+.rl-right {
+  width: 80%;
+  background-color: #fff;
+  padding: 10px 0 10px 10px;
+}
+
+@media (max-width: 768px) {
+  .rlcontainer {
+    flex-direction: column;
+  }
+
+  .rl-left,
+  .rl-right {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 5px;
+  background-color: brown;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .horizontal-line {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+  }
+}
+
+.footer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    align-items: center;
+  }
+
+  .footer-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 10% 5% 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-nav {
+    flex-direction: column;
+  }
+}

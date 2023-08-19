@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="1-header">
+        <div class="logo">Brand Logo</div>
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#"><strong>Home</strong></a></li>
+            <li><a href="#"><strong>About</strong></a></li>
+            <li><a href="#"><strong>Services</strong></a></li>
+            <li><a href="#"><strong>Contact</strong></a></li>
+          </ul>
+        </nav>
+        <nav class="mobile-nav">
+          <span style="font-size: 30px; cursor: pointer;" onclick="openNav()"
+            >&#9776; Menu</span
+          >
+        </nav>
+      </header>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#"><strong></strong>Home</strong></a>
+        <a href="#"><strong>About</strong></a>
+        <a href="#"><strong>Services</strong></a>
+        <a href="#"><strong>Contact</strong></a>
+      </div>
+
+      <main>
+        <img src="img/banner.png" style=" padding-bottom: 20px;"/>
+        <div style="display: inline;">
+            <img src="img/arrow.png" alt="image" style="width: 20px; height: auto;" >
+            <p style="display: inline;"><strong>What is Lorem ipsum ?</strong></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. </p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+              <img src="img/Jar.jpg" alt="image">
+              <p class="item-title">Where does it come from?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates.</p>
+            </div>
+          
+            <div class="grid-item">
+              <img src="img/Jar.jpg" alt="image">
+              <p class="item-title">Where does it come from?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates.</p>
+            </div>
+          
+            <div class="grid-item">
+              <img src="img/Jar.jpg" alt="image">
+              <p class="item-title">Where does it come from?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates.</p>
+            </div>
+        </div>
+          
+      </main>
+
+      <main>
+        <div style="display: inline; padding-top: 40px;">
+            <img src="img/arrow.png" alt="image" style="padding: 25px 10 25px 25px; width: 20px; height: auto;" >
+            <p style="display: inline;"><strong>What is Lorem ipsum ?</strong></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates.</p>
+            
+            <div class="lrcontainer" style="padding: 10px 0 10px 0;">
+              <div class="lr-left">
+                <p class="item-title">Where does it come from?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates.</p>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates.</p>
+                    </li>
+                </ul>
+              </div>
+              <div class="lr-right">
+                <img src="img/carring.jpg" alt="image" />
+              </div>
+            </div><br/><br/><br/>
+
+            <div class="rlcontainer" style="padding-bottom: 20px;">
+              <div class="rl-left">
+                <img src="img/Jar.jpg" alt="image" />
+              </div>
+
+              <div class="rl-right">
+                <p class="item-title">Where does it come from?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor.</p>
+                <ul>
+                    <li>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Voluptates. Lorem ipsum dolor.</p>
+                    </li>
+                </ul>
+              </div>
+            </div><br/><br/><br/>
+            <div class="horizontal-line" style="padding: 1px 0 1px 0;"></div>
+        </div>
+                
+      </main>
+      <footer class="footer">
+        <p>BRAND® Lorem ipsum dolor, sit amet consectetur.</p><br/>
+        <p>© 2023 My Mysites, All rigths reserved</p><br/>
+        <nav class="footer-nav">
+          <span>Legal Notice</span>
+          <span>Privacy Policy</span>
+          <span>Contact us</span>
+          <span>Cookies Policy</span>
+        </nav>
+      </footer>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>
